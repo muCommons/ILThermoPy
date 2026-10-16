@@ -40,10 +40,11 @@ def GetSavedCompounds() -> Compounds:
     pkg = _importlib_resources.files('ilthermopy')
     data_file = pkg / 'data' / 'compounds.csv'
     with _importlib_resources.as_file(data_file) as path:
-        data = _pd.read_csv(path)
+        data = _pd.read_csv(path, dtype={'id': str, 'name': str, 'smiles': str})
+        data['smiles'] = data['smiles'].fillna('')
     # prepare data
-    id2smiles = {code: smiles for code, smiles in zip(data.id, data.smiles)}
-    name2smiles = {name: smiles for name, smiles in zip(data.name, data.smiles)}
+    id2smiles = {code: smiles for code, smiles in zip(data.id, data.smiles) if smiles}
+    name2smiles = {name: smiles for name, smiles in zip(data.name, data.smiles) if smiles}
     compounds = Compounds(data, id2smiles, name2smiles)
     
     return compounds

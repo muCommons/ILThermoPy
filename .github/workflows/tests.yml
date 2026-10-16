@@ -1,0 +1,29 @@
+name: tests
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install package and pytest
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e . pytest
+      - name: Offline regression tests
+        run: |
+          python -m pytest -q tests/test_ilthermopy.py::TestOfflineMaintenance tests/test_ilthermopy.py::TestData::test_compounds
+      - name: Live ILThermo integration tests
+        run: |
+          python -m pytest -q tests/test_ilthermopy.py::TestData::test_properties tests/test_ilthermopy.py::TestData::test_entries tests/test_ilthermopy.py::TestSearch

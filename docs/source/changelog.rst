@@ -1,6 +1,33 @@
 Changelog
 =========
 
+1.1.3
+-----
+
+* Refreshes the bundled compounds/SMILES snapshot for the ILThermo 2.0 update
+  reported on July 22, 2026 (3,762 compounds, all with SMILES).
+
+* Uses the property-list API metadata to detect the last database update,
+  instead of scraping the JavaScript-driven homepage.
+
+* Handles missing SMILES without leaking ``NaN`` into lookup dictionaries, and
+  adds the verified L-aspartate/cholinium SMILES annotation.
+
+* Corrects eight manually reviewed SMILES assignments (four associations
+  affected by reused ILThermo compound IDs, three metal complex ligands,
+  and one morpholinium alkyl-chain length).
+
+* Normalizes the ILThermo API URL paths, removing accidental double slashes.
+
+* Reviews and refreshes the cookbook, including property-key examples, a dated
+  data-snapshot notice, and the guanidinium-motif substructure-search example.
+
+* Updates the package date (October 16, 2026), version and documentation
+  configuration, and fixes the documentation deployment workflow typo.
+
+* No changes to the public search API or runtime dependency list.
+
+
 1.1.2
 -----
 
