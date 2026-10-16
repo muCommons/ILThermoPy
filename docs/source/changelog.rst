@@ -13,6 +13,10 @@ Changelog
 * Handles missing SMILES without leaking ``NaN`` into lookup dictionaries, and
   adds the verified L-aspartate/cholinium SMILES annotation.
 
+* Corrects eight manually reviewed SMILES assignments (four associations
+  affected by reused ILThermo compound IDs, three metal complex ligands,
+  and one morpholinium alkyl-chain length).
+
 * Normalizes the ILThermo API URL paths, removing accidental double slashes.
 
 * Reviews and refreshes the cookbook, including property-key examples, a dated

@@ -87,3 +87,25 @@ class TestOfflineMaintenance:
         monkeypatch.setattr(updates._req, 'GetPropertyList', lambda: {'plist': []})
         with pytest.raises(ILThermoResponseError):
             updates.CheckLastUpdate()
+
+
+    def test_corrected_structural_annotations(self):
+        """Guard known ID-reuse and nomenclature mistakes in the snapshot."""
+        compounds = ilt.GetSavedCompounds()
+        expected = [
+            ("ABOMJk", "N-hexyl-N-methylmorpholinium N-acetyl-L-valinate", "CC(=O)N[C@H](C(=O)[O-])C(C)C.CCCCCC[N+]1(C)CCOCC1"),
+            ("ABOMgM", "sodium hexadecyl sulfate", "CCCCCCCCCCCCCCCCOS(=O)(=O)[O-].[Na+]"),
+            ("ABrsgp", "N-[(heptyloxy)methyl]-2-hydroxy-N,N-dimethylethanaminium 1,1,1-trifluoro-N-[(trifluoromethyl)sulfonyl]methanesulfonamide", "CCCCCCCOC[N+](C)(C)CCO.O=S(=O)([N-]S(=O)(=O)C(F)(F)F)C(F)(F)F"),
+            ("AByVwu", "1-dodecyl-4-methyl-1H-1,2,4-triazol-4-ium bis((trifluoromethyl)sulfonyl)amide", "CCCCCCCCCCCCn1c[n+](C)cn1.O=S(=O)([N-]S(=O)(=O)C(F)(F)F)C(F)(F)F"),
+            ("AByRdf", "4-benzyl-4-dodecmorpholinium (4-chlorophenoxy)acetate", "ClC1=CC=C(OCC(=O)[O-])C=C1.C(C1=CC=CC=C1)[N+]1(CCOCC1)CCCCCCCCCCCC"),
+            ("ADRmZg", "1-decyl-3-methylimidazolium cobalt(II) hexafluoroacetylacetonate", "CCCCCCCCCC[n+]1ccn(C)c1.FC(F)(F)C1=[O+][Co-4]23(OC(C(F)(F)F)=CC(=[O+]2)C(F)(F)F)(OC(C(F)(F)F)=CC(=[O+]3)C(F)(F)F)OC(C(F)(F)F)=C1"),
+            ("ADRkxz", "1-decyl-3-methylimidazolium nickel(II) hexafluoroacetylacetonate", "CCCCCCCCCC[n+]1ccn(C)c1.FC(F)(F)C1=[O+][Ni-4]23(OC(C(F)(F)F)=CC(=[O+]2)C(F)(F)F)(OC(C(F)(F)F)=CC(=[O+]3)C(F)(F)F)OC(C(F)(F)F)=C1"),
+            ("ADSgVl", "1-decyl-3-methylimidazolium copper(II) hexafluoroacetylacetonate", "CCCCCCCCCC[n+]1ccn(C)c1.FC(F)(F)C1=[O+][Cu-4]23(OC(C(F)(F)F)=CC(=[O+]2)C(F)(F)F)(OC(C(F)(F)F)=CC(=[O+]3)C(F)(F)F)OC(C(F)(F)F)=C1"),
+        ]
+        for cid, name, smiles in expected:
+            matching = compounds.data.loc[compounds.data['id'] == cid]
+            assert len(matching) == 1
+            assert matching.iloc[0]['name'] == name
+            assert matching.iloc[0]['smiles'] == smiles
+            assert compounds.id2smiles[cid] == smiles
+            assert compounds.name2smiles[name] == smiles

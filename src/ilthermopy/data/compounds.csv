@@ -2148,10 +2148,10 @@ ABOLCI,4-O-.alpha.-D-glucopyranosyl-D-glucitol,OC[C@H](O)[C@@H](O)[C@H](O[C@H]1O
 ABOLRe,1-butyl-3-(3-sulfopropyl)-imidazolium hydrogensulfate,CCCC[n+]1ccn(CCCS(=O)(=O)O)c1.O=S(=O)([O-])O
 ABOLVd,1-hexylpyridinium bis(fluorosulfonyl)amide,CCCCCC[n+]1ccccc1.O=S(=O)(F)[N-]S(=O)(=O)F
 ABOLgi,1-octyl-3-methylimidazolium trifluoromethanesulfonate,CCCCCCCC[n+]1ccn(C)c1.O=S(=O)([O-])C(F)(F)F
-ABOMJk,N-hexyl-N-methylmorpholinium N-acetyl-L-valinate,C[N+](C)(C)CCO.Cc1cccc(Nc2ccccc2C(=O)[O-])c1C
+ABOMJk,N-hexyl-N-methylmorpholinium N-acetyl-L-valinate,CC(=O)N[C@H](C(=O)[O-])C(C)C.CCCCCC[N+]1(C)CCOCC1
 ABOMcT,1-butyl-3-methylimidazolium ibuprofenate,CC(C)Cc1ccc(C(C)C(=O)[O-])cc1.CCCCn1cc[n+](C)c1
 ABOMgJ,N-methyl-N-octylmorpholinium N-acetyl-L-alaninate,CC(=O)N[C@@H](C)C(=O)[O-].CCCCCCCC[N+]1(C)CCOCC1
-ABOMgM,sodium hexadecyl sulfate,C1C[C@@H]2[N+](CCCC)(C)[C@H]1C[C@H](O)C2.C(CC(=O)[O-])[C@@H](C(=O)[O-])[NH3+]
+ABOMgM,sodium hexadecyl sulfate,CCCCCCCCCCCCCCCCOS(=O)(=O)[O-].[Na+]
 ABOMjd,N-butyltropinium L-glutamate,C1C[C@@H]2[N+](CCCC)(C)[C@H]1C[C@H](O)C2.C(CC(=O)[O-])[C@@H](C(=O)[O-])[NH3+]
 ABOMwb,"2-hydroxy-N,N,N-trimethylethan-1-aminium 2-((2,3-dimethylphenyl)amino)benzoate",C[N+](C)(C)CCO.Cc1cccc(Nc2ccccc2C(=O)[O-])c1C
 ABOVBE,tributylmethylammonium phenyltrifluoroborate,CCCC[N+](C)(CCCC)CCCC.F[B-](F)(F)c1ccccc1
@@ -3100,7 +3100,7 @@ ABrsEY,4-methyl-4-(4'-vinylbenzyl)morpholinium bis(trifluoromethanesulfonyl)amid
 ABrsMX,triethyl(4-vinylbenzyl)ammonium bis(trifluoromethanesulfonyl)amide,C=Cc1ccc(C[N+](CC)(CC)CC)cc1.O=S(=O)([N-]S(=O)(=O)C(F)(F)F)C(F)(F)F
 ABrsRH,"2-(acetyloxy)-N-(butoxymethyl)-N,N-dimethylethanaminium 1,1,1-trifluoro-N-[(trifluoromethyl)sulfonyl]methanesulfonamide",CCCCOC[N+](C)(C)CCOC(C)=O.O=S(=O)([N-]S(=O)(=O)C(F)(F)F)C(F)(F)F
 ABrsaX,"1,1'-(hexane-1,6-diyl)bis(3-methylimidazolium) dimethyl phosphate",P(=O)(OC)(OC)[O-].C(CCCCCN1C=[N+](C=C1)C)N1C=[N+](C=C1)C.COP(=O)(OC)[O-]
-ABrsgp,"N-[(heptyloxy)methyl]-2-hydroxy-N,N-dimethylethanaminium 1,1,1-trifluoro-N-[(trifluoromethyl)sulfonyl]methanesulfonamide",C=Cc1ccc(C[N+]2(C)CCOCC2)cc1.O=S(=O)([N-]S(=O)(=O)C(F)(F)F)C(F)(F)F
+ABrsgp,"N-[(heptyloxy)methyl]-2-hydroxy-N,N-dimethylethanaminium 1,1,1-trifluoro-N-[(trifluoromethyl)sulfonyl]methanesulfonamide",CCCCCCCOC[N+](C)(C)CCO.O=S(=O)([N-]S(=O)(=O)C(F)(F)F)C(F)(F)F
 ABsCLG,1-(4-sulfobutyl)-3-methylimidazolium bis(trifluoromethanesulfonyl)imide,Cn1cc[n+](CCCCS(=O)(=O)O)c1.O=S(=O)([N-]S(=O)(=O)C(F)(F)F)C(F)(F)F
 ABsCXb,3-methyl-1-tetradecyl-2-(thiazol-4-yl)benzimidazolium tetrafluoroborate,CCCCCCCCCCCCCC[n+]1c(-c2cscn2)n(C)c2ccccc21.F[B-](F)(F)F
 ABsFcl,"N-benzyl-N,N-dimethyltetradecan-1-aminium 4-hydroxy-3-methoxybenzoate",CCCCCCCCCCCCCC[N+](C)(C)Cc1ccccc1.COc1cc(C(=O)[O-])ccc1O
@@ -3236,10 +3236,10 @@ AByDxD,1-butyl-3-methylimidazolium deoxycholate,C[C@H](CCC(=O)[O-])[C@H]1CC[C@@H
 AByLDL,"1-[(1R,2S,5R)-(-)-menthoxymethyl]-3-methylimidazolium bis(trifluoromethylsulfonyl)imide",CC(C)[C@@H]1CC[C@@H](C)C[C@H]1OCn1cc[n+](C)c1.O=S(=O)([N-]S(=O)(=O)C(F)(F)F)C(F)(F)F
 AByLuP,1-dodecyl-3-methyl-1H-imidazolium bis(trifluoromethylsulfonyl)amide,CCCCCCCCCCCC[n+]1ccn(C)c1.O=S(=O)([N-]S(=O)(=O)C(F)(F)F)C(F)(F)F
 AByMCy,1-ethyl-3-methylimidazolium  tricyanomelaminate,C1=C([N-]C#N)C=C([N-]C#N)C=C1[N-]C#N.CCN1C=C[N+](=C1)C.CCN1C=C[N+](=C1)C.CCN1C=C[N+](=C1)C
-AByRdf,4-benzyl-4-dodecmorpholinium (4-chlorophenoxy)acetate,ClC1=CC=C(OCC(=O)[O-])C=C1.C(C1=CC=CC=C1)[N+]1(CCOCC1)CCCCCCCCCC
+AByRdf,4-benzyl-4-dodecmorpholinium (4-chlorophenoxy)acetate,ClC1=CC=C(OCC(=O)[O-])C=C1.C(C1=CC=CC=C1)[N+]1(CCOCC1)CCCCCCCCCCCC
 AByRhR,4-benzyl-4-decylmorpholinium 2-(4-chloro-2-methylphenoxy)propanoate,ClC1=CC(=C(OC(C(=O)[O-])C)C=C1)C.C(C1=CC=CC=C1)[N+]1(CCOCC1)CCCCCCCCCC
 AByTUQ,1-methyl-3-[(phenylseleno)methyl]-1H-imidazolium bis(trifluoromethanesulfonyl)imide,[N-](S(=O)(=O)C(F)(F)F)S(=O)(=O)C(F)(F)F.CN1C=[N+](C=C1)C[Se]C1=CC=CC=C1
-AByVwu,"1-dodecyl-4-methyl-1H-1,2,4-triazol-4-ium bis((trifluoromethyl)sulfonyl)amide",[N-](S(=O)(=O)C(F)(F)F)S(=O)(=O)C(F)(F)F.c(N(CC)CC)1c(N(CC)CC)[c+]1NCCCC
+AByVwu,"1-dodecyl-4-methyl-1H-1,2,4-triazol-4-ium bis((trifluoromethyl)sulfonyl)amide",CCCCCCCCCCCCn1c[n+](C)cn1.O=S(=O)([N-]S(=O)(=O)C(F)(F)F)C(F)(F)F
 AByVzC,bis(dimethylamino)dibutylaminocyclopropenium bis(trifluoromethanesulfonyl)amide,[N-](S(=O)(=O)C(F)(F)F)S(=O)(=O)C(F)(F)F.c(N(C)C)1c(N(C)C)[c+]1N(CCCC)CCCC
 AByeup,"1-methyl-3-pentylimidazolium 1,1,2,2,2-pentafluoro-N-[(1,1,2,2,2-pentafluoroethyl)sulfonyl]ethanesulfonamide",CCCCCn1cc[n+](C)c1.O=S(=O)([N-]S(=O)(=O)C(F)(F)C(F)(F)F)C(F)(F)C(F)(F)F
 AByfmN,3-cyclopentyl-1-(2-(2-ethoxyethoxy)ethyl)imidazolium bis(trifluoromethylsulfonyl)imide,CCOCCOCC[n+]1ccn(C2CCCC2)c1.O=S(=O)([N-]S(=O)(=O)C(F)(F)F)C(F)(F)F
@@ -3681,12 +3681,12 @@ ADPkRP,"3,3'-(1,12-dodecanediyl)bis[1-methylimidazolium] 1,1,1-trifluoro-N-[(tri
 ADQEcZ,"N-(8,8-dimethyl-2,5,11-trioxa-8-azatridecan-8-ium-13-yl)-N,N-dimethylpentan-1-aminium bis((trifluoromethyl)sulfonyl)amide",CCCCC[N+](C)(C)CCOCC[N+](C)(C)CCOCCOC.O=S(=O)([N-]S(=O)(=O)C(F)(F)F)C(F)(F)F.O=S(=O)([N-]S(=O)(=O)C(F)(F)F)C(F)(F)F
 ADQTRi,"hexane-1,6-diylbis(trioctylphosphonium) chloride",[Cl-].C(CCCCC[P+](CCCCCCCC)(CCCCCCCC)CCCCCCCC)[P+](CCCCCCCC)(CCCCCCCC)CCCCCCCC.[Cl-]
 ADRMjp,"(((oxybis(ethane-2,1-diyl))bis(oxy))bis(ethane-2,1-diyl))bis(diethylsulfonium) bis((trifluoromethyl) sulfonyl) amide",CC[S+](CC)CCOCCOCCOCC[S+](CC)CC.O=S(=O)([N-]S(=O)(=O)C(F)(F)F)C(F)(F)F.O=S(=O)([N-]S(=O)(=O)C(F)(F)F)C(F)(F)F
-ADRkxz,1-decyl-3-methylimidazolium nickel(II) hexafluoroacetylacetonate,CCCCCCCCCC[n+]1ccn(C)c1.CC1=[O+][Ni-4]23(OC(C)=CC(=[O+]2)C)(OC(C)=CC(=[O+]3)C)OC(C)=C1
-ADRmZg,1-decyl-3-methylimidazolium cobalt(II) hexafluoroacetylacetonate,CCCCCCCCCC[n+]1ccn(C)c1.CC1=[O+][Co-4]23(OC(C)=CC(=[O+]2)C)(OC(C)=CC(=[O+]3)C)OC(C)=C1
+ADRkxz,1-decyl-3-methylimidazolium nickel(II) hexafluoroacetylacetonate,CCCCCCCCCC[n+]1ccn(C)c1.FC(F)(F)C1=[O+][Ni-4]23(OC(C(F)(F)F)=CC(=[O+]2)C(F)(F)F)(OC(C(F)(F)F)=CC(=[O+]3)C(F)(F)F)OC(C(F)(F)F)=C1
+ADRmZg,1-decyl-3-methylimidazolium cobalt(II) hexafluoroacetylacetonate,CCCCCCCCCC[n+]1ccn(C)c1.FC(F)(F)C1=[O+][Co-4]23(OC(C(F)(F)F)=CC(=[O+]2)C(F)(F)F)(OC(C(F)(F)F)=CC(=[O+]3)C(F)(F)F)OC(C(F)(F)F)=C1
 ADSGNv,tetraoctylphosphonium docusate,CCCCC(CC)COC(=O)CC(C(=O)OCC(CC)CCCC)S(=O)(=O)[O-].CCCCCCCC[P+](CCCCCCCC)(CCCCCCCC)CCCCCCCC
 ADSGYA,trihexyl(tetradecyl)phosphonium docusate,CCCCCCCCCCCCCC[P+](CCCCCC)(CCCCCC)CCCCCC.CCCCC(CC)COC(=O)CC(C(=O)OCC(CC)CCCC)S(=O)(=O)[O-]
 ADSLol,"1,3-di(2,5,8,11,14,17-hexaoxanonadecan-19-yl)-1H-imidazolium bis((trifluoromethyl)sulfonyl)amide",FC(S(=O)(=O)[N-]S(=O)(=O)C(F)(F)F)(F)F.COCCOCCOCCOCCOCCOCCN1C=[N+](C=C1)CCOCCOCCOCCOCCOCCOC
-ADSgVl,1-decyl-3-methylimidazolium copper(II) hexafluoroacetylacetonate,CCCCCCCCCC[n+]1ccn(C)c1.CC1=[O+][Cu-4]23(OC(C)=CC(=[O+]2)C)(OC(C)=CC(=[O+]3)C)OC(C)=C1
+ADSgVl,1-decyl-3-methylimidazolium copper(II) hexafluoroacetylacetonate,CCCCCCCCCC[n+]1ccn(C)c1.FC(F)(F)C1=[O+][Cu-4]23(OC(C(F)(F)F)=CC(=[O+]2)C(F)(F)F)(OC(C(F)(F)F)=CC(=[O+]3)C(F)(F)F)OC(C(F)(F)F)=C1
 ADTISa,"N-(2-(2-(dimethyl(3-phenylpropyl)ammonio)ethoxy)ethyl)-N,N-dimethylpentan-1-aminium bis((trifluoromethyl)sulfonyl)amide",CCCCC[N+](C)(C)CCOCC[N+](C)(C)CCCc1ccccc1.O=S(=O)([N-]S(=O)(=O)C(F)(F)F)C(F)(F)F.O=S(=O)([N-]S(=O)(=O)C(F)(F)F)C(F)(F)F
 ADUFfI,1-methyl-3-octadecylimidazolium bis(nonafluorobutanesulfonyl)imide,CCCCCCCCCCCCCCCCCCn1cc[n+](C)c1.O=S(=O)([N-]S(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F
 ADUgoo,"tetrabutylammonium 4,7,10,13,16,19-hexamethyl-3,6,9,12,15,18,21-heptaoxanonatriacontan-1-oate",CC(OCC(=O)[O-])COC(COC(COC(COC(COC(COCCCCCCCCCCCCCCCCCC)C)C)C)C)C.C(CCC)[N+](CCCC)(CCCC)CCCC
