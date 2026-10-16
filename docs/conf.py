@@ -21,7 +21,7 @@ copyright = '2023-2026, Ivan Yu. Chernyshov'
 author = 'Ivan Yu. Chernyshov'
 
 # The full version, including alpha/beta/rc tags
-release = '1.1.2'
+release = '1.1.3'
 
 
 # -- General configuration ---------------------------------------------------

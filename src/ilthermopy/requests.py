@@ -19,10 +19,10 @@ except ImportError:
 
 # API URLs
 BASE_URL   = 'https://ilthermo.boulder.nist.gov/'
-PROPS_URL  = f'{BASE_URL}/ILT2/ilprpls'
-SEARCH_URL = f'{BASE_URL}/ILT2/ilsearch'
-DATA_URL   = f'{BASE_URL}/ILT2/ilset'
-IMAGE_URL = f'{BASE_URL}/ILT2/ilimage'
+PROPS_URL  = f'{BASE_URL}ILT2/ilprpls'
+SEARCH_URL = f'{BASE_URL}ILT2/ilsearch'
+DATA_URL   = f'{BASE_URL}ILT2/ilset'
+IMAGE_URL = f'{BASE_URL}ILT2/ilimage'
 
 
 def GetHomepage() -> str:

@@ -1,6 +1,28 @@
 Changelog
 =========
 
+1.1.3
+-----
+
+* Refreshes the bundled compounds/SMILES snapshot for the ILThermo 2.0 update
+  reported on July 22, 2026 (3,762 compounds; 3,761 nonempty SMILES).
+
+* Uses the property-list API metadata to detect the last database update,
+  instead of scraping the JavaScript-driven homepage.
+
+* Handles missing SMILES without leaking ``NaN`` into the lookup dictionaries.
+
+* Normalizes the ILThermo API URL paths, removing accidental double slashes.
+
+* Refreshes property-key and update-date examples in the documentation notebook,
+  and notes that other saved example outputs may be historical.
+
+* Updates the package date (October 16, 2026), version and documentation
+  configuration, and fixes the documentation deployment workflow typo.
+
+* No changes to the public search API or runtime dependency list.
+
+
 1.1.2
 -----
 
