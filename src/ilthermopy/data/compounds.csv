@@ -1261,7 +1261,7 @@ AAtWEl,"2,3-dimethyl-1-propylimidazolium hydrogen sulfate",CCC[n+]1ccn(C)c1C.O=S
 AAtWRA,1-ethyl-3-methylimidazolium thyminide,[N-]1C(=O)NC(=O)C(C)=C1.C(C)N1C=[N+](C=C1)C
 AAtWTH,1-butyl-3-methylimidazolium hydrogen sulfate,CCCC[n+]1ccn(C)c1.O=S(=O)([O-])O
 AAtWVr,1-propyl-3-methylimidazolium methylsulfate,CCC[n+]1ccn(C)c1.COS(=O)(=O)[O-]
-AAtWfr,cholinium L-aspartate,
+AAtWfr,cholinium L-aspartate,C(C(O)=O)[C@H](N)C([O-])=O.OCC[N+](C)(C)C
 AAtWly,1-butyl-3-methylimidazolium dihydrogen phosphate,CCCC[n+]1ccn(C)c1.O=P([O-])(O)O
 AAtWpB,1-ethyl-3-methylimidazolium ethyl sulfate,CCOS(=O)(=O)[O-].CC[n+]1ccn(C)c1
 AAtWqs,1-(2-methoxyethyl)-3-methyl-1H-imidazol-3-ium methanesulfonate,COCCn1cc[n+](C)c1.CS(=O)(=O)[O-]

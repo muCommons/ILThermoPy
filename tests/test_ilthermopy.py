@@ -46,13 +46,28 @@ class TestOfflineMaintenance:
                     requests.DATA_URL, requests.IMAGE_URL):
             assert url.startswith('https://ilthermo.boulder.nist.gov/ILT2/')
 
-    def test_compound_smiles_missing_not_nan(self):
+    def test_cholinium_l_aspartate_structure(self):
+        """Regression for the newly added structure annotation."""
+        from ilthermopy.data_structs import ResponseToCompound
+
+        expected = 'C(C(O)=O)[C@H](N)C([O-])=O.OCC[N+](C)(C)C'
         compounds = ilt.GetSavedCompounds()
-        missing = compounds.data.loc[compounds.data.name == 'cholinium L-aspartate']
-        assert len(missing) == 1
-        assert missing.iloc[0].smiles == ''
-        assert missing.iloc[0].id not in compounds.id2smiles
-        assert 'cholinium L-aspartate' not in compounds.name2smiles
+        rows = compounds.data.loc[compounds.data.name == 'cholinium L-aspartate']
+        assert len(rows) == 1
+        row = rows.iloc[0]
+        assert row.id == 'AAtWfr'
+        assert row.smiles == expected
+        assert compounds.id2smiles[row.id] == expected
+        assert compounds.name2smiles[row['name']] == expected
+        api_compound = ResponseToCompound(
+            {'idout': row.id, 'name': row['name'], 'sample': []})
+        assert api_compound.smiles == expected
+        assert api_compound.smiles_error is None
+
+    def test_all_saved_smiles_are_strings(self):
+        compounds = ilt.GetSavedCompounds()
+        assert all(isinstance(smi, str) and smi for smi in compounds.id2smiles.values())
+        assert all(isinstance(smi, str) and smi for smi in compounds.name2smiles.values())
 
     def test_update_date_from_property_api(self, monkeypatch, capsys):
         import ilthermopy.updates as updates

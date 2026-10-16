@@ -5,17 +5,18 @@ Changelog
 -----
 
 * Refreshes the bundled compounds/SMILES snapshot for the ILThermo 2.0 update
-  reported on July 22, 2026 (3,762 compounds; 3,761 nonempty SMILES).
+  reported on July 22, 2026 (3,762 compounds, all with SMILES).
 
 * Uses the property-list API metadata to detect the last database update,
   instead of scraping the JavaScript-driven homepage.
 
-* Handles missing SMILES without leaking ``NaN`` into the lookup dictionaries.
+* Handles missing SMILES without leaking ``NaN`` into lookup dictionaries, and
+  adds the verified L-aspartate/cholinium SMILES annotation.
 
 * Normalizes the ILThermo API URL paths, removing accidental double slashes.
 
-* Refreshes property-key and update-date examples in the documentation notebook,
-  and notes that other saved example outputs may be historical.
+* Reviews and refreshes the cookbook, including property-key examples, a dated
+  data-snapshot notice, and the guanidinium-motif substructure-search example.
 
 * Updates the package date (October 16, 2026), version and documentation
   configuration, and fixes the documentation deployment workflow typo.
