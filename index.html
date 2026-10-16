@@ -1,0 +1,205 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to ILThermoPy’s documentation! &mdash; ILThermoPy 1.1.3 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=cb7bf70b"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ILThermoPy Cookbook" href="source/cookbook.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            ILThermoPy
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="source/cookbook.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/api.html">Package API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="source/changelog.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">ILThermoPy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Welcome to ILThermoPy’s documentation!</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="welcome-to-ilthermopy-s-documentation">
+<h1>Welcome to ILThermoPy’s documentation!<a class="headerlink" href="#welcome-to-ilthermopy-s-documentation" title="Link to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p><strong>ILThermoPy</strong> is an unofficial Python package for retrieving data from
+<a class="reference external" href="https://ilthermo.boulder.nist.gov/">ILThermo 2.0</a> and enriching ionic-liquid records with molecular identifiers
+such as SMILES. It is intended for cheminformatics, molecular thermodynamics,
+and machine-learning workflows that need ILThermo data in a more
+structure-aware form.</p>
+<section id="status-and-scope">
+<h2>Status and scope<a class="headerlink" href="#status-and-scope" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Usable package for accessing ILThermo 2.0 data and combining retrieved records
+with stored molecular-structure annotations.</p></li>
+<li><p>Unofficial interface: ILThermoPy is not affiliated with, maintained by, or
+endorsed by NIST.</p></li>
+<li><p>External-service-dependent: ILThermo 2.0 does not provide a stable public web
+API, so this package depends on the current behavior of the ILThermo web
+service.</p></li>
+<li><p>Molecular-identifier enrichment depends on stored mappings from ILThermo
+compound identifiers to manually checked structural data; new ILThermo
+updates may require refreshing those mappings.</p></li>
+<li><p>Intended for cheminformatics, molecular thermodynamics, and ML-ready
+ionic-liquid data workflows.</p></li>
+</ul>
+</section>
+<section id="what-problem-does-it-solve">
+<h2>What problem does it solve?<a class="headerlink" href="#what-problem-does-it-solve" title="Link to this heading"></a></h2>
+<p>ILThermo 2.0 contains experimental physicochemical-property data for ionic
+liquids, but the public web interface primarily describes molecular components
+by names. For many downstream workflows, names are not enough: cheminformatics,
+substructure search, descriptor generation, data cleaning, and ML model building
+usually require machine-readable molecular identifiers.</p>
+<p>ILThermoPy bridges this gap by retrieving ILThermo records and adding stored
+SMILES annotations for known ionic-liquid components. The structural annotations
+were prepared through semi-automatic name-to-structure conversion followed by
+manual validation, making the extracted data easier to use in computational
+chemistry and data-driven thermodynamics workflows.</p>
+<p>Typical use cases include:</p>
+<ul class="simple">
+<li><p>collecting ILThermo records for selected properties, compounds, or years;</p></li>
+<li><p>preparing ionic-liquid datasets for descriptor calculation and ML pipelines;</p></li>
+<li><p>linking thermodynamic measurements to cation/anion structures;</p></li>
+<li><p>checking which ILThermo compounds already have stored structural annotations;</p></li>
+<li><p>updating local structural mappings when the external ILThermo database
+changes.</p></li>
+</ul>
+<p>The package is intentionally small. It should be treated as a practical access
+and enrichment layer over an external web service, not as an official ILThermo
+API or a complete curated thermodynamic database.</p>
+</section>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h2>
+<p>ILThermoPy can be installed from the <a class="reference external" href="https://pypi.org/project/ilthermopy/">PyPI package</a>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>ilthermopy
+</pre></div>
+</div>
+</section>
+<section id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Python 3.7+;</p></li>
+<li><p>requests;</p></li>
+<li><p>pandas;</p></li>
+<li><p>importlib_resources for Python 3.7 and 3.8.</p></li>
+</ol>
+</section>
+<section id="useful-links">
+<h2>Useful links<a class="headerlink" href="#useful-links" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://ilthermo.boulder.nist.gov/">ILThermo 2.0</a>: public web application for the ILThermo 2.0 database.</p></li>
+<li><p><a class="reference external" href="https://mucommons.github.io/ILThermoPy/">Documentation</a>: cookbook, API reference, and changelog.</p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/ilthermopy/">PyPI package</a>: package distribution page.</p></li>
+<li><p><a class="reference external" href="https://github.com/muCommons/ILThermoPy">GitHub repository</a>: source code and release history.</p></li>
+<li><p><a class="reference external" href="https://github.com/muCommons/ILThermoPy/issues">Issue tracker</a>: bug reports and maintenance notes.</p></li>
+<li><p><a class="reference external" href="https://github.com/muCommons/ILThermoPy/tree/main/update">Update tools</a>: scripts for semi-automatic refresh of structural
+information after ILThermo database updates.</p></li>
+</ol>
+</section>
+<section id="citation">
+<h2>Citation<a class="headerlink" href="#citation" title="Link to this heading"></a></h2>
+<p>If ILThermoPy is useful in your work, please cite the Zenodo concept DOI
+(all versions), which resolves to the latest archived release:</p>
+<blockquote>
+<div><p>Ivan Yu. Chernyshov. (2026). <em>ILThermoPy: unofficial ILThermo 2.0
+access and SMILES enrichment for ionic-liquid data workflows</em> [Computer
+software]. Zenodo. <a class="reference external" href="https://doi.org/10.5281/zenodo.20218373">https://doi.org/10.5281/zenodo.20218373</a></p>
+</div></blockquote>
+<p>Citation metadata is also provided in the repository <code class="docutils literal notranslate"><span class="pre">CITATION.cff</span></code> file.</p>
+</section>
+<section id="indices-and-tables">
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="source/cookbook.html" class="btn btn-neutral float-right" title="ILThermoPy Cookbook" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023-2026, Ivan Yu. Chernyshov.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
